@@ -29,7 +29,7 @@ const Topbar = () => {
           <Button
             variant="ghost"
             className="shad-button_ghost"
-            onClick={() => signOut}
+            onClick={() => signOut()}
           >
             <img
               src="/assets/icons/logout.svg"
@@ -41,7 +41,7 @@ const Topbar = () => {
             className="flex-center gap-3"
           >
             <img
-              src={user.imageUrl || '/assets/images/profile-placeholder.svg'}
+              src={user.imageUrl || '/assets/icons/profile-placeholder.svg'}
               alt="profile"
               className="h-8 h-8 rounded-full"
             />
